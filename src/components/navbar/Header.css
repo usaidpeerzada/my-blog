@@ -1,0 +1,7 @@
+.header-main{
+  background-color: teal;
+}
+.blog-name {
+  flex: auto;
+  color: white;
+}
