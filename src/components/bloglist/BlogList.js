@@ -18,7 +18,7 @@ export default function BlogList() {
       .get("https://dev.to/api/articles?username=usaidpeerzada")
       .then((res) => {
         console.log(...res.data);
-        setBlogState([...res.data]);
+        setBlogState(res.data);
       });
   };
   return (
