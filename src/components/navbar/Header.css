@@ -1,7 +1,12 @@
 .header-main{
-  background-color: teal;
+  background-color: rgb(32, 180, 136);
+}
+.nav-link {
+  color: azure !important;
+  font-weight: bolder;
 }
 .blog-name {
   flex: auto;
-  color: white;
+  color: rgb(255, 255, 255)  !important;
+  font-weight: bolder;
 }

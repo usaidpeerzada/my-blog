@@ -7,7 +7,9 @@ export default function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <Nav.Link href="https://usaid.me">Home</Nav.Link>
+          <Nav.Link className="nav-link" href="https://usaid.me">
+            Home
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
       <Navbar.Brand className="blog-name" href="#home">

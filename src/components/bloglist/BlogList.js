@@ -17,7 +17,6 @@ export default function BlogList() {
     axios
       .get("https://dev.to/api/articles?username=usaidpeerzada")
       .then((res) => {
-        console.log(...res.data);
         setBlogState(res.data);
       });
   };
