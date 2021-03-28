@@ -1,11 +1,10 @@
-import "./App.css";
 import Header from "./components/navbar/Header";
-import Blogs from "./components/blogs/Blogs";
+import BlogCard from "./components/bloglist/BlogList";
 function App() {
   return (
     <div>
       <Header />
-      <Blogs />
+      <BlogCard />
     </div>
   );
 }
