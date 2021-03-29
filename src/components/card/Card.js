@@ -1,9 +1,13 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import "./Card.css";
 
 export default function BlogCard(props) {
   return (
-    <Card style={{ margin: "2rem", width: "20rem" }}>
+    <Card
+      className="blog-card-shadow"
+      style={{ margin: "2rem", width: "20rem" }}
+    >
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>

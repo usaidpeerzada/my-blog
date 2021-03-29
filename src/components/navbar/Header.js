@@ -13,7 +13,7 @@ export default function Header() {
         </Nav>
       </Navbar.Collapse>
       <Navbar.Brand className="blog-name" href="#home">
-        Usaid's Blog Posts
+        Usaid's Blog
       </Navbar.Brand>
     </Navbar>
   );
