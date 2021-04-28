@@ -5,15 +5,18 @@ import "./BlogList.css";
 export default function BlogList() {
   const [blogState, setBlogState] = useState([]);
   useEffect(() => {
-    getDevToPosts();
-  }, []);
-  const getDevToPosts = () => {
+    let isSubscribed = true;
     axios
       .get("https://dev.to/api/articles?username=usaidpeerzada")
       .then((res) => {
-        setBlogState(res.data);
+        if (isSubscribed) {
+          setBlogState(res.data);
+        }
       });
-  };
+    return () => {
+      isSubscribed = false;
+    };
+  }, [blogState]);
   return (
     <div className="blog-cards">
       {blogState &&
