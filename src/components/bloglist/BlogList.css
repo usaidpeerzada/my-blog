@@ -1,5 +1,7 @@
 .blog-cards {
-  display: flex; 
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
   justify-content: center;
 }
 @media (max-width: 800px) {
